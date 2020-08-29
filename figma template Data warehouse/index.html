@@ -14,29 +14,35 @@
     
 </head>
 <body>
+    <button class="requestButton">
+        Request demo
+       <img src="icons/NavButtonArrow.svg"  aria-hidden>
+   </button>
 <nav>
+    <a href="#landingPage" aria-label="go to the top">
+        <img src="icons/Logo.svg" alt="logo">
+    </a>
+    <div class = 'menu-container'>
     <div class="container">
-        <a href="#" aria-label="go to the top">
-            <img src="icons/Logo.svg" alt="logo">
-        </a>
+       
     
-        <div class="navLinks">
-            <a  href="#" class="main">About</a>
+        <div class="displayNone navLinks">
+            
+            <a href="#about" class="main">About</a>
+            
             <a href="#">Help</a>
-            <a href="#">Features</a>
-            <a href="#">Signup</a>
-        
+            <a href="#features">Features</a>
+            <a href="#" id='lastLink'>Signup</a>
         </div>
-             <button class="btn btn--white">
-                 Request demo
-                <img src="icons/NavButtonArrow.svg"  aria-hidden>
-            </button>
-            <button class="btnMenu"><img src="C:\Users\bonobo\Documents\PLIK Z KODOWANIEM\figma cours\icons\menu.svg" alt="open menu"></button>
+    </div>
+       
+        
+            <button class="btnMenu" type=button><img src="icons\menu.svg" alt="open menu"></button>
     </div>
 </nav>
 
 <main>
-<section class="landingPage">
+<section class="landingPage" id='landingPage'>
     <div class=container>
         <h1> Save your data storage here</h1>
             <p>Data Warehouse is a data storage area that has been tested for security, so you can store your data here safely but not be afraid of being stolen by others. </p>
@@ -47,7 +53,7 @@
 
 </section>
 <div class="container">
-     <section class="about">
+     <section class="about" id='about'>
         
             <h1>We are a high-level data storage bank</h1>
             <p>The place to store various data that you can access at any time through the internet and where you can carry it. This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse.</p>
@@ -56,13 +62,17 @@
  </section>
 </div>
 <div class="container">
-<section class="features">
+<section class="features" id='features'>
     <h1>Features</h1>
     <h2>Some of the features and advantages that we provide for those of you who
          store data in this Data Warehouse.</h2>
+         <div class = 'containerForSlides'>
     <div class="featureGrid">
-        
-        <div class="featureListItem featureListItem--item1">
+        <div class='buttons'>
+        <button type="button" class='prevSlide'>&lArr;</button>
+        <button type="button" class='nextSlide'>&rArr;</button>
+    </div>
+        <div class="featureListItem featureListItem--item1 active">
             <h3>Search Data </h3>
             <p>Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time.</p>
             <a href="#">Learn more <img src="icons/NavButtonArrow.svg" aria-hidden alt=""></a>
@@ -85,12 +95,12 @@
         
 
     </div>
-
-
+</div>
+</div>
 </section>
 </div>
 </main>
 
-
+<script src="js\js.js"></script>
 </body>
 </html>

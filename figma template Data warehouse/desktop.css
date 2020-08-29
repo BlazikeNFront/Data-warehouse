@@ -17,11 +17,13 @@
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
     background: #FFFFFF;
     color:var(--font-color2);
+    transform: translate(-91%, -38%);
 }
 .btn--white img {
     margin-left:10px;
     vertical-align: middle;
     display:initial;
+    transform: translate(-20%,-5%);
 }
 
 
@@ -29,6 +31,9 @@ nav button {
     margin-left: 38.3%;
     
    
+}
+.navLinks {
+    width: 53.7%;
 }
 
 

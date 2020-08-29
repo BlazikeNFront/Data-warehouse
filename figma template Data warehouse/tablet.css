@@ -17,11 +17,13 @@
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
     background: #FFFFFF;
     color:var(--font-color2);
+    transform: translate(-64%, -17%);
 }
 .btn--white img {
     margin-left:10px;
     vertical-align: middle;
     display:initial;
+    
     
 }
 nav {
@@ -39,9 +41,12 @@ nav button {
 
 .navLinks {
     display:flex;
-    width:35.7%;
+    flex-direction: row;
+    width: 40.7%;
+    
     margin-left:10.8%;
     justify-content: space-between;
+
 }
 .btnMenu {
     display:none;
@@ -97,6 +102,10 @@ nav button {
 .features {
     margin-top: 104px;
 
+}
+.buttons {
+    display:none;
+    
 }
 
 .features h1 {
