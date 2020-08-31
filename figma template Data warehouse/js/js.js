@@ -134,10 +134,96 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 
     
-nextButton.addEventListener('click', () => changeSlide(true),console.log(clickable));
+nextButton.addEventListener('click', () => changeSlide(true));
 prevButton.addEventListener('click', () => changeSlide(false));
    
+// Testiomonials Slider based on simply switch based on sliders counting(translateCount)
 
+const testimonials = document.querySelector('.testimonialsFlex');
+let clickableForTestimionals = true
+
+const slideLeftButton = document.querySelector('.prevTestSlide');
+const slideRightButton = document.querySelector('.nextTestSlide');
+let translateCount = 0;
+const dotsArray = Array.from(document.querySelectorAll('.sliderDot'))
+console.log(dotsArray[0])
+
+slideLeftButton.addEventListener('click',()=>{
+  if(clickableForTestimionals === true) {
+    clickableForTestimionals = false;
+    switch (translateCount){
+        case 0 :
+            clickableForTestimionals = true;
+            break;
+        case 1:
+            testimonials.classList.add('testiomonialsSlider0');
+            testimonials.classList.remove('testiomonialsSlider1');
+            dotsArray[1].classList.remove('activeDot');
+            dotsArray[0].classList.add('activeDot');
+        translateCount--;
+            break;
+
+        case 2:
+            testimonials.classList.add('testiomonialsSlider1');
+            testimonials.classList.remove('testiomonialsSlider2');
+            dotsArray[2].classList.remove('activeDot');
+            dotsArray[1].classList.add('activeDot');
+        translateCount--;
+            break;
+        case 3:
+            testimonials.classList.add('testiomonialsSlider2');
+            testimonials.classList.remove('testiomonialsSlider3');
+            dotsArray[3].classList.remove('activeDot');
+            dotsArray[2].classList.add('activeDot');
+        translateCount--;
+            break;
+
+}}
+console.log(translateCount)
+testimonials.addEventListener('transitionend', ()=>{clickableForTestimionals = true}
+    )
+
+
+});
+
+slideRightButton.addEventListener('click',()=>{
+    if(clickableForTestimionals === true) {
+        clickableForTestimionals = false;
+        switch (translateCount){
+
+        case 0:testimonials.classList.add('testiomonialsSlider1');
+            testimonials.classList.remove('testiomonialsSlider2');
+            dotsArray[0].classList.remove('activeDot');
+            dotsArray[1].classList.add('activeDot');
+        translateCount++;
+            break;
+
+        case 1:
+            testimonials.classList.add('testiomonialsSlider2');
+            testimonials.classList.remove('testiomonialsSlider1');
+            dotsArray[1].classList.remove('activeDot');
+            dotsArray[2].classList.add('activeDot');
+        translateCount++;
+            break;
+
+        case 2:
+            testimonials.classList.add('testiomonialsSlider3');
+            testimonials.classList.remove('testiomonialsSlider2');
+            dotsArray[2].classList.remove('activeDot');
+            dotsArray[3].classList.add('activeDot');
+        translateCount++;
+            break;
+        case 3:
+            clickableForTestimionals = true;
+            break;
+    }}
+    
+    testimonials.addEventListener('transitionend', ()=>{clickableForTestimionals = true})
+        
+    
+    
+    
+});
 
 
 
