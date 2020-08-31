@@ -427,7 +427,7 @@ vertical-align: middle;
 .sliderDotsContainer {
     
     display: flex;
-    width: 8%;
+    width: 16%;
     justify-content: space-between;
     align-items: center;
 }
@@ -452,6 +452,8 @@ vertical-align: middle;
     width: 400%;
     height: 100%;
     overflow: hidden;
+    transition-duration: 2s;
+    
 }
 .testimonialsSlider {
     width: 23%;
@@ -474,6 +476,7 @@ vertical-align: middle;
 .testimonialsFlex img {
     margin: 8% 0% 0% 8%;
     width: 38%;
+    border-radius:50%;
 }
 .proffesion {
     color: var(--font-color3);
@@ -486,10 +489,33 @@ vertical-align: middle;
     text-align: justify;
   text-justify: inter-word;
 }
+.activeDot {
+    background-color:var(--font-color4);
+    width:7px;
+    height:7px;
+}
 
 .displayNone {
     display:none;
     }
+
+.testiomonialsSlider0 {
+    transform:translate(0%);
+}
+
+.testiomonialsSlider1 {
+    transform:translate(-25%);
+}
+.testiomonialsSlider2 {
+    transform:translate(-50%);
+}
+
+.testiomonialsSlider3 {
+    transform:translate(-75%);
+}
+
+
+
 
 @keyframes translateMenu_right {
     0% {
