@@ -225,6 +225,28 @@ slideRightButton.addEventListener('click',()=>{
     
 });
 
+//probably its not neccesery
+
+const widthOutput = document.querySelector('#width');
+
+function displayWindowSize(){
+    
+    let width = document.documentElement.clientWidth;
+    if (width>768){
+        menu.classList.remove('closeMenu')
+    }
+    
+    
+    console.log(width)
+}
+
+const divMenuContainer = document.querySelector(".menu-container");
+
+window.addEventListener("resize", displayWindowSize);
+    
+    
+
+
 
 
 
