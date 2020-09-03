@@ -3,6 +3,7 @@
     
 }
 
+
 .btn {
     font-size:14px;
     font-weight: 700;
@@ -11,6 +12,12 @@
     border-radius: 50px;
 
 
+}
+nav .container {
+    display: flex;
+    align-items: center;
+    width: 610px;
+    margin-left: 0;
 }
 
 .btn--white {
@@ -27,7 +34,10 @@
     
 }
 nav {
-    margin-top:50px;
+    
+    margin-top: 23px;
+    display:flex;
+    align-items: center;
   
 } 
 
@@ -48,6 +58,54 @@ nav button {
     justify-content: space-between;
 
 }
+.menu-container {
+   
+    margin-top: 0px;
+    left: 0%;
+    position: relative;
+    overflow: hidden;
+    width: 90%;;
+    height: 17px;
+    top: 0px;
+    z-index: 12000;
+
+}
+.navLinks {
+    position:relative;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 69%;
+    top: 0px;
+    background-color:transparent;
+    border: none;;
+    border-radius: 0;
+    overflow: hidden;
+    z-index:20000;
+    color:black;
+    
+
+    
+}
+.navLinks a {
+    
+    
+    text-decoration: none;
+    width: 93%;
+    text-align: center;
+    
+    color:black;
+    padding-bottom: 8px;
+
+    
+}
+.navLinks .main {
+    color:black;
+    font-weight:700;
+    }
+
 .btnMenu {
     display:none;
     
@@ -58,7 +116,7 @@ nav button {
     
     
     min-height:83vh ;
-    padding: 77px 0 100px 0;
+    padding: 30px 0 100px 0;
     background-image:url(bg/LandingPage1.svg) ;
     background-repeat:no-repeat;
     background-position: 44% 52%;
