@@ -13,6 +13,20 @@
 
 
 }
+.navLinksMin768px {
+    display:initial;
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+.navLinksMin768px a {
+    text-decoration:none;
+    color:black;
+
+}
+a main {
+    font-weight: bold;
+}
 nav .container {
     display: flex;
     align-items: center;
@@ -50,45 +64,15 @@ nav button {
    
 
 .navLinks {
-    display:flex;
-    flex-direction: row;
-    width: 40.7%;
+    display:none;
     
-    margin-left:10.8%;
-    justify-content: space-between;
 
 }
 .menu-container {
-   
-    margin-top: 0px;
-    left: 0%;
-    position: relative;
-    overflow: hidden;
-    width: 90%;;
-    height: 17px;
-    top: 0px;
-    z-index: 12000;
-
+   display:none;
+ 
 }
-.navLinks {
-    position:relative;
-    display: flex;
-    
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    height: 69%;
-    top: 0px;
-    background-color:transparent;
-    border: none;;
-    border-radius: 0;
-    overflow: hidden;
-    z-index:20000;
-    color:black;
-    
 
-    
-}
 .navLinks a {
     
     
@@ -285,4 +269,91 @@ vertical-align: middle;
     left: 50%;
     transform: translate(-50%);
     font-size: 20px;
+}
+
+.containerForSlides {
+    overflow:initial;
+    height:auto;
+}
+.testimonialsFlex img {
+    
+    width: 141px;
+    border-radius: 50%;
+}
+.peopleDesc {
+    width: 64%;
+    float: right;
+    margin-top: 11%;
+}
+.peopleInfo {
+    font-size: 18px;
+    margin:0;
+    text-align: justify;
+    width: 60%;
+    float: right;
+    transform: translate(-10px, -42px);
+}
+.testimonialsFlex h4 {
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--font-color1);
+    text-align: center;
+  
+    margin-bottom: 12px;
+}
+.testimonialsSlider {
+    width: 23%;
+    height: 91%;
+    background-color: white;
+    border-radius: 20px;
+}
+.buttonsForTestimonials {
+    transform: translate(10px, -25px);
+    display: flex;
+    justify-content: space-around;
+    
+}
+.btn {
+    font-size: 27px;
+    font-weight: 700;
+    border: 0;
+    padding: 26px 55px;
+    border-radius: 50px;
+}
+.testimonials h3 {
+    
+    margin-top: 75px;
+    
+}
+.footerImgText {
+   
+    justify-content: center;
+   
+}
+.footerImgText img {
+   
+    padding-right:10px;
+   
+}
+.companyInfo {
+    grid-area: companyInfo;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 10px 20px 10px;
+ 
+    align-items: center;
+}
+.localization {
+    
+    padding-top: 10px;
+}
+footer {
+    padding-bottom:0px;
+}
+.footerSocial img {
+   
+    width: 36%;
+}
+.companyInfo {
+    grid-area: none;
 }
