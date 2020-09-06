@@ -106,3 +106,36 @@ nav button {
    background-size: 50%;
    background-position: -1% 54%;
 }
+
+.navLinksMin768px {
+    margin-left:48px;
+    width: 85%;
+   font-size:20px;
+}
+
+.main {
+    font-weight:700;
+    font-size:23px;
+}
+.testimonials {
+    
+    width: 100%;
+    
+}
+.testimonialsSlider {
+    width: 20%;
+    
+}
+.testimonialsFlex {
+    display: flex;
+    justify-content: space-around;
+    width: 317%;
+    height: 100%;
+    overflow: hidden;
+    transition-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+.freebies button {
+    padding:30px 60px;
+    transform: translate(-10px);
+}
