@@ -1,0 +1,58 @@
+h4 {
+  font-size: 20px;
+}
+.container {
+  width: 960px;
+}
+.nav__ul {
+  width: 90%;
+}
+.mainView {
+  height: 800px;
+}
+.about__p {
+  margin-top: 100px;
+}
+.features__mainParagraph {
+  font-size: 17px;
+}
+.features__gridLayout {
+  width: 960px;
+}
+.features__featureListItem {
+  width: 430px;
+}
+.testimonials {
+  width: 900px;
+}
+.testimonials__wrapper {
+  width: 3550px;
+}
+.testimonials__slider {
+  width: 700px;
+}
+.testiominals__personDescritpion {
+  width: 300px;
+}
+.testimonials__span {
+  font-weight: 700;
+}
+.testiomonials__sliderDots {
+  left: 44%;
+}
+.footer {
+  width: 100%;
+}
+.footer__grid {
+  justify-content: space-between;
+}
+.footer__aboutSection {
+  width: 200px;
+}
+.footer__helpSection {
+  width: 200px;
+}
+.footer__socialSection {
+  margin: 0 auto;
+  width: 200px;
+}

@@ -1,0 +1,39 @@
+.container {
+  width: 400px;
+}
+.features__featureListItem {
+  left: 5%;
+  width: 360px;
+}
+.testimonials__wrapper {
+  width: 1600px;
+}
+.testimonials__slider {
+  width: 330px;
+  justify-content: space-between;
+}
+.testimionials__Img {
+  width: 90px;
+}
+.testiominals__personDescritpion {
+  width: 200px;
+}
+
+.testimonials__sliderButtons {
+  width: 100%;
+}
+
+.footer {
+  width: 100%;
+}
+.footer__grid {
+  height: 250px;
+}
+
+.footer__socialSection {
+  grid-area: footerSocial;
+  width: 90px;
+}
+.footer__companyInfo {
+  height: 150px;
+}
