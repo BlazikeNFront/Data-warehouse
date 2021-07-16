@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  //Menu open and navigate through site on mobile, its based on translate in div which overflow is set to hidden
-  const menuButton = document.querySelector(".nav__mobileBtn");
-  const menu = document.querySelector(".nav__ulMobile");
-  const menuBackDrop = document.querySelector(".nav__menuBackdrop");
+  //Mobile Menu button toggler
+  //Mobile Menu button toggler
+  //Mobile Menu button toggler
+  const menuButton = document.querySelector(".nav__MobileBtn");
+  const menu = document.querySelector(".nav__MobileUl");
+  const menuBackDrop = document.querySelector(".nav__MobileBackdrop");
   let menuBtnClickable = true;
   let menuOpen = false;
   function toggleClickable() {
@@ -17,13 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     if (menuOpen === false) {
       toggleClickable();
-      menu.classList.remove("nav__ulMobile--hidden");
+      menu.classList.remove("nav__MobileUl--hidden");
       menuBackDrop.classList.add("displayBlock");
       toggleClickable();
       menuOpen = true;
     } else if (menuOpen === true) {
       toggleClickable();
-      menu.classList.add("nav__ulMobile--hidden");
+      menu.classList.add("nav__MobileUl--hidden");
       menuBackDrop.classList.remove("displayBlock");
       menuOpen = false;
       toggleClickable();
@@ -31,15 +33,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   menuBackDrop.addEventListener("click", () => {
     toggleClickable();
-    menu.classList.add("nav__ulMobile--hidden");
+    menu.classList.add("nav__MobileUl--hidden");
     menuBackDrop.classList.remove("displayBlock");
     menuOpen = false;
     toggleClickable();
   });
 
-  // Featerues slider based on animation in div which have overflow set to hidden and gives higher z-index slides that should be active/visible to user
-  // Featerues slider based on animation in div which have overflow set to hidden and gives higher z-index slides that should be active/visible to user
-  // Featerues slider based on animation in div which have overflow set to hidden and gives higher z-index slides that should be active/visible to user
+  // Featerues slider based on animation in div which have overflow set to hidden and gives higher z-index slides that should be active/visible for user
+  // Featerues slider based on animation in div which have overflow set to hidden and gives higher z-index slides that should be active/visible for user
+  // Featerues slider based on animation in div which have overflow set to hidden and gives higher z-index slides that should be active/visible for user
   const slideChangeDuration = 1000;
   const featureItems = Array.from(
     document.querySelectorAll(".features__featureListItem")
@@ -72,28 +74,26 @@ document.addEventListener("DOMContentLoaded", () => {
     sliderButtonsClickable();
     active = document.querySelector(".features__featureListItem--active");
     let activeIndex = featureItems.indexOf(active);
-    console.log(featureItems);
+    console.log(activeIndex);
     if (forward === true) {
       newActive = featureItems[(activeIndex + 1) % featureItems.length];
-      console.log(activeIndex, featureItems.indexOf(newActive));
       active.classList.add("slideToRight");
+      newActive.classList.add("features__featureListItem--active");
       active.addEventListener("animationend", () => {
         active.classList.remove(
           "features__featureListItem--active",
           "slideToRight"
         );
+
         active.classList.add("slideFromRight");
         active.addEventListener("animationend", () => {
           active.classList.remove("slideFromRight");
         });
       });
 
-      newActive.classList.add("features__featureListItem--active");
-      setTimeout(
-        sliderButtonsClickable,
-        2050
-      ); /* Because there are 2 transition/animation, adding second event listener that checks if second transitions has ended to makes slider clickable again does not work,
-        (second listener also initiliazed after first transition - makes the slider buggy when user clic after first animation), so there timeout that chagne clickable value to true after time of animation*/
+      setTimeout(sliderButtonsClickable, 2050);
+      /* Because there are 2 transition/animation, adding second event listener that checks if second transitions has ended to makes slider clickable again does not work,
+        (second listener also initiliazed after first transition - makes the slider buggy when user clic after first animation), so there timeout that change clickable value to true after time of animation*/
     } else {
       newActive =
         featureItems[
@@ -120,6 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
   nextButton.addEventListener("click", () => changeSlide(true));
   prevButton.addEventListener("click", () => changeSlide(false));
 
+  // Testiomonials Slider
   // Testiomonials Slider
   // Testiomonials Slider
 
