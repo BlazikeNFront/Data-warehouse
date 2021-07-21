@@ -57,9 +57,14 @@
 }
 
 .testimionials__Img {
+  position: initial;
   width: 130px;
 }
+.testimonials__p {
+  position: initial;
+}
 .testimonials__sliderButtons {
+  top: 54%;
   left: 5%;
   width: 90%;
 }

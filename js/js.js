@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     sliderButtonsClickable();
     active = document.querySelector(".features__featureListItem--active");
     let activeIndex = featureItems.indexOf(active);
-    console.log(activeIndex);
+
     if (forward === true) {
       newActive = featureItems[(activeIndex + 1) % featureItems.length];
       active.classList.add("slideToRight");
